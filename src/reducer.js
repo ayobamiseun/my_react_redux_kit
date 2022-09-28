@@ -9,7 +9,7 @@ export default function reducer(state = [], action) {
                 {
                     id: ++lastId,
                     description: action.payload.description,
-                    resolved: false
+                    resolved: false,
                 }
             ];
         case "bugRemoved"
