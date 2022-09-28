@@ -5,7 +5,7 @@ export default function reducer(state = [], action) {
     switch (action.type) {
         case "bugAdded":
             return [
-                ..state,
+                ...state,
                 {
                     id: ++lastId,
                     description: action.payload.description,
